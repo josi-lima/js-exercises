@@ -12,7 +12,7 @@ function sumNumbers(numberA, numberB) {
     
   return result;
 }
-console.log(`Dynamic sum: 2 + 4 = ${sumNumbers(2, 4)}`);
+console.log(`Dynamic sum: 2 + 4 = ${sumNumbers(2, 4)}`); // Dynamic sum: 2 + 4 = 6
 
 // A. Function to sum the numbers--------------------------------
 
@@ -23,7 +23,7 @@ function sumNumbers() {
   
   return result;
 }
-console.log(`Sum: 2 + 4 = ${sumNumbers()}`);
+console.log(`Sum: 2 + 4 = ${sumNumbers()}`); // Sum: 2 + 4 = 6
 
 // B. Function to subtract the numbers------------------------------
 
@@ -34,7 +34,7 @@ function subtractNumbers() {
   
   return result;
 }
-console.log(`Subtract: 2 - 4 = ${subtractNumbers()}`);
+console.log(`Subtract: 2 - 4 = ${subtractNumbers()}`); // Subtract: 2 - 4 = -2
 
 // C. Function to divide the numbers--------------------------------
 
@@ -45,7 +45,7 @@ function divideNumbers() {
   
   return result;
 }
-console.log(`Divide: 2 / 4 = ${divideNumbers()}`);
+console.log(`Divide: 2 / 4 = ${divideNumbers()}`); // Divide: 2 / 4 = 0.5
 
 // D. Function to multiply the numbers--------------------------------
 
@@ -56,7 +56,7 @@ function multiplyNumbers() {
   
   return result;
 }
-console.log(`Multiply: 2 * 4 = ${multiplyNumbers()}`);
+console.log(`Multiply: 2 * 4 = ${multiplyNumbers()}`); // Multiply: 2 * 4 = 8
 
 // ========================================================================================================
 console.log('');
@@ -71,7 +71,7 @@ Total to pay: $88,00 */
 
 function calculateTip (dinnerPrice) {
   const waiterTip = 10;
-  return (waiterTip / 100) * dinnerPrice;
+  return (waiterTip / 100) * (dinnerPrice);
 }
 
 function calculateDinnerTotal (dinnerPrice) {
@@ -83,3 +83,29 @@ console.log(
 Waiter's tip: $${calculateTip(120)}. 
 The total price of your dinner is $${calculateDinnerTotal(120)}. 
 Come back soon!`);
+
+// ========================================================================================================
+console.log('');
+
+/* 🚀 Exercise #3 - Elabore um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor parcelado em 3x (sem desconto).
+EXEMPLO:
+Product's price: $60,00
+In cash/debit card: $54,00
+Or 3x of: $20,00 */
+
+// ---------------------------------------------------------------
+
+function calculateDiscount (productPrice) {
+  const discount = 10;
+  return productPrice - (discount / 100) * productPrice;
+}
+
+function calculateInstallments (productPrice) {
+  return productPrice / 3;
+}
+
+console.log(
+`Product's price: $60.  
+In cash/debit card: $${calculateDiscount(60)}. 
+Or 3x of: $${calculateInstallments(60)}. 
+Have a great day!`);
