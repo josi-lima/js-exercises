@@ -4,7 +4,7 @@ Subtract: 2 - 4 = x
 Divide: 2 / 4 = x
 Multiply: 2 * 4 = x  */
 
-// --------- Dynamic function ------------------------------------
+// --------- Dynamic function ----------------------------------
 
 function sumNumbers(numberA, numberB) {
   let result = numberA + numberB;
