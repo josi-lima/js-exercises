@@ -1,2 +1,2 @@
 # JavaScript - Exercises & Challenges
-⚡Repository containing several intermediate and advanced exercises and challenges to practice the JavaScript programming language.
+⚡Repository containing several intermediate and advanced exercises and challenges created to practice JavaScript programming language.
