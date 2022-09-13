@@ -2,32 +2,34 @@
 
 // FUNÇÃO NOMINADA ----------------------------------
 
-function example(num1, num2) {
+function firstExample(num1, num2) {
   return num1 * num2;
 }
-console.log(example(8, 9));
+console.log(firstExample(8, 9)); // 72
 
 // FUNÇÃO ANÔNIMA ----------------------------------
 
 const example = function (num1, num2) {
   return num1 * num2;
 }
-console.log(example(5, 3));
+console.log(example(5, 3)); // 15
 
 // ARROW FUNCTION ----------------------------------
 
 const arrowFunction = (num1, num2) => {
   return num1 * num2;
 }
-console.log(example(12, 2));
+console.log(arrowFunction(12, 2)); // 24
 
 // ARROW FUNCTION - one line ---------------------------
 
 const reducedArrowFunction = (num1, num2) => num1 * num2;
 
-console.log(example(3, 10));
+console.log(reducedArrowFunction(3, 10)); // 30
 
 // ========================================================================================================
+console.log('');
+
 /* 🚀 Exercise #1 - Faça funções com as 4 operações básicas, com base nos números 2 e 4. Ao final de cada operação, imprima-as na tela no seguinte formato: 
 A. Sum: 2 + 4 = x
 B. Subtract: 2 - 4 = x
@@ -97,12 +99,12 @@ Total to pay: $88,00 */
 
 // ---------------------------------------------------------------
 
-function calculateTip (dinnerPrice) {
+function calculateTip(dinnerPrice) {
   const waiterTip = 10;
   return (waiterTip / 100) * (dinnerPrice);
 }
 
-function calculateDinnerTotal (dinnerPrice) {
+function calculateDinnerTotal(dinnerPrice) {
   return dinnerPrice + calculateTip(dinnerPrice); // return dinnerPrice + (waiterTip / 100) * dinnerPrice;
 }
 
@@ -123,12 +125,12 @@ Or 3x of: $20,00 */
 
 // ---------------------------------------------------------------
 
-function calculateDiscount (productPrice) {
+function calculateDiscount(productPrice) {
   const discount = 10;
   return productPrice - (discount / 100) * productPrice;
 }
 
-function calculateInstallments (productPrice) {
+function calculateInstallments(productPrice) {
   return productPrice / 3;
 }
 
@@ -146,9 +148,15 @@ EXEMPLO:
 'racecar': true
 'map': false */
 
-function checkPalindrome (word) {
+function checkPalindrome(word) {
   if (word.toLowerCase() === word.toLowerCase().split('').reverse('').join('')) {
     return "You got it! It's a palindrome!";
   } return "Oh, no! It's not a palindrome!";
 }
 console.log(checkPalindrome('Racecar')); //true
+
+// ========================================================================================================
+console.log('');
+
+/* 🚀 Exercise #4
+*/
