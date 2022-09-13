@@ -109,3 +109,18 @@ console.log(
 In cash/debit card: $${calculateDiscount(60)}. 
 Or 3x of: $${calculateInstallments(60)}. 
 Have a great day!`);
+
+// ========================================================================================================
+console.log('');
+
+/* 🚀 BÔNUS Exercise - Elabore um programa para checar se uma palavra é palíndromo. Um palíndromo é uma palavra que pode ser lida de forma inversa e terá o mesmo significado. Exemplo: "reviver", "arara", "radar", "wow". Adicione uma feature para aceitar palavras com letras maiscúlas.
+EXEMPLO:
+'racecar': true
+'map': false */
+
+function checkPalindrome (word) {
+  if (word.toLowerCase() === word.toLowerCase().split('').reverse('').join('')) {
+    return "You got it! It's a palindrome!";
+  } return "Oh, no! It's not a palindrome!";
+}
+console.log(checkPalindrome('Racecar')); //true
