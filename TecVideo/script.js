@@ -1,3 +1,32 @@
+// ======= *** FUNCTIONS *** ==============================================================================
+
+// FUNÇÃO NOMINADA ----------------------------------
+
+function example(num1, num2) {
+  return num1 * num2;
+}
+console.log(example(8, 9));
+
+// FUNÇÃO ANÔNIMA ----------------------------------
+
+const example = function (num1, num2) {
+  return num1 * num2;
+}
+console.log(example(5, 3));
+
+// ARROW FUNCTION ----------------------------------
+
+const arrowFunction = (num1, num2) => {
+  return num1 * num2;
+}
+console.log(example(12, 2));
+
+// ARROW FUNCTION - one line ---------------------------
+
+const reducedArrowFunction = (num1, num2) => num1 * num2;
+
+console.log(example(3, 10));
+
 // ========================================================================================================
 /* 🚀 Exercise #1 - Faça funções com as 4 operações básicas, com base nos números 2 e 4. Ao final de cada operação, imprima-as na tela no seguinte formato: 
 A. Sum: 2 + 4 = x
@@ -5,16 +34,15 @@ B. Subtract: 2 - 4 = x
 C. Divide: 2 / 4 = x
 D. Multiply: 2 * 4 = x  */
 
-// Dynamic function to sum numbers----------------------------------
+// Dynamic function to sum numbers ----------------------------------
 
 function sumNumbers(numberA, numberB) {
   let result = numberA + numberB;
-    
-  return result;
+  return result; // return numberA + numberB;
 }
 console.log(`Dynamic sum: 2 + 4 = ${sumNumbers(2, 4)}`); // Dynamic sum: 2 + 4 = 6
 
-// A. Function to sum the numbers--------------------------------
+// A. Function to sum the numbers --------------------------------
 
 function sumNumbers() {
   let numberA = 2;
