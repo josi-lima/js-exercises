@@ -50,3 +50,13 @@ const maxPrice = prices.reduce((max, price) => {
   return max;
 });
 console.log(`The maximum price is $${maxPrice}.`);
+
+// =============================================================================== 
+console.log('');
+
+//  🚀 EXERCISE 4: Sum the numbers from the array, but now using an 'initial value'.
+
+const evens = [2, 4, 6, 8, 10];
+const evensSum = evens.reduce((sum, num) => sum + num, 100);
+
+console.log(`The total amount, adding 100, is ${evensSum}.`);
