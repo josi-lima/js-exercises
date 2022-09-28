@@ -11,12 +11,14 @@ for (let lowPrice of lowPrices){
 }
 console.log(`The first total amount is $${total}.`);
 
-// ========================================================================================================
+// ================================================================================
 
 // Using ".reduce()"
 const highPrices = [300.50, 209.99, 5523.50, 3900.99, 4950.99];
 
 const totalSum = highPrices.reduce((sum, highPrice) => {
   return sum + highPrice;
-});
+})
 console.log(`The second total amount is $${totalSum}.`);
+
+// const totalSum = highPrices.reduce((sum, highPrice) => sum + highPrice);
