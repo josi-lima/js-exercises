@@ -9,7 +9,7 @@ let total = 0;
 for (let lowPrice of lowPrices){
   total += lowPrice;
 }
-console.log(`The first total amount is $${total}.`);
+console.log(`The first total amount is $${total}.`); // $111.97
 
 // ================================================================================
 
@@ -21,7 +21,7 @@ const totalSum = highPrices.reduce((sum, highPrice) => {
 })
 // const totalSum = highPrices.reduce((sum, highPrice) => sum + highPrice);  ==== shorten version ====
 
-console.log(`The second total amount is $${totalSum}.`);
+console.log(`The second total amount is $${totalSum}.`); // $14885.97
 
 // ================================================================================ 
 console.log('');
@@ -36,7 +36,7 @@ const minPrice = prices.reduce((min, price) => {
   }
   return min;
 });
-console.log(`The minimum price is $${minPrice}.`);
+console.log(`The minimum price is $${minPrice}.`); // $1.99
 
 // =============================================================================== 
 console.log('');
@@ -49,7 +49,7 @@ const maxPrice = prices.reduce((max, price) => {
   }
   return max;
 });
-console.log(`The maximum price is $${maxPrice}.`);
+console.log(`The maximum price is $${maxPrice}.`); // $45.79
 
 // =============================================================================== 
 console.log('');
@@ -59,4 +59,4 @@ console.log('');
 const evens = [2, 4, 6, 8, 10];
 const evensSum = evens.reduce((sum, num) => sum + num, 100);
 
-console.log(`The total amount, adding 100, is ${evensSum}.`);
+console.log(`The total amount, adding 100, is ${evensSum}.`); // 130
