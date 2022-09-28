@@ -43,6 +43,14 @@ console.table(aFifteen);
 const bFifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
 console.table(bFifteen);
 
+/*
+┌─────────┬────────────┬───────────┬──────┬────────┐
+│ (index) │   first    │   last    │ year │ passed │
+├─────────┼────────────┼───────────┼──────┼────────┤
+│    0    │ 'Galileo'  │ 'Galilei' │ 1564 │  1642  │
+│    1    │ 'Johannes' │ 'Kepler'  │ 1571 │  1630  │
+└─────────┴────────────┴───────────┴──────┴────────┘
+*/
 // =================================================================================
 console.log('');
 
@@ -52,3 +60,18 @@ console.log('');
 
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 console.log(fullNames);
+
+/* [
+  'Albert Einstein',
+  'Isaac Newton',
+  'Galileo Galilei',
+  'Marie Curie',
+  'Johannes Kepler',
+  'Nicolaus Copernicus',
+  'Max Planck',
+  'Katherine Blodgett',
+  'Ada Lovelace',
+  'Sarah E. Goode',
+  'Lise Meitner',
+  'Hanna Hammarström'
+] */
