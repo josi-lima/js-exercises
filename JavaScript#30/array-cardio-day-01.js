@@ -1,4 +1,4 @@
-// ================ Challenge JavaScript#30- Array Cardio #DAY-1 ======================================
+// ================ Challenge JavaScript#30- Array Cardio #DAY-1 💪 ======================================
 
 // Some data to work with
 
@@ -134,7 +134,7 @@ console.log('');
 
 // Array.prototype.sort()
 
-// 🚀 EXERCISE 4: Sort the inventors by years lived, starting with the person who lived the most on the top.
+// 🚀 EXERCISE 5: Sort the inventors by years lived, starting with the person who lived the most on the top.
 
 const oldest = inventors.sort((personA, personB) => {
   const lastPerson = personA.passed - personA.year;
@@ -162,3 +162,35 @@ console.table(oldest);
 │   11    │    'Ada'    │  'Lovelace'   │ 1815 │  1852  │
 └─────────┴─────────────┴───────────────┴──────┴────────┘
 */
+
+// =================================================================================
+console.log('');
+
+// Array.prototype.includes()
+
+// 🚀 EXERCISE 6: Create a list of Boulevards in Paris that contain 'de' anywhere in the name.
+
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+
+
+
+
+// =================================================================================
+console.log('');
+
+// Array.prototype.sort()
+
+// 🚀 EXERCISE 7: Sort the people alphabetically by last names.
+
+
+
+
+// =================================================================================
+console.log('');
+
+// Array.prototype.reduce()
+
+// 🚀 EXERCISE 8: // Sum up the instances of each of these items from the array.
+
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
