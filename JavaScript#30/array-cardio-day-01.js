@@ -197,8 +197,12 @@ console.log('');
 
 // 🚀 EXERCISE 7: Sort the people alphabetically by last names.
 
-
-
+const alpha = people.sort(function(lastOne, nextOne) {
+  const [aLast] = lastOne.split(', ');
+  const [bLast] = nextOne.split(', ');
+  return aLast > bLast ? 1 : -1;
+});
+console.table(alpha);
 
 // =================================================================================
 console.log('');
