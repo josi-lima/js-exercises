@@ -118,3 +118,16 @@ console.table(ordered)
 
 // =================================================================================
 console.log('');
+
+// Array.prototype.reduce()
+
+// 🚀 EXERCISE 4: How many years did all the inventors live all together?
+
+const allYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.passed - inventor.year)
+}, 0); 
+// 0 is the initial value
+console.log(`The inventors lived ${allYears} years altogether.`); // 861
+
+// =================================================================================
+console.log('');
