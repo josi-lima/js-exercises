@@ -261,3 +261,14 @@ console.log('');
 // 🚀 EXERCISE 8: // Sum up the instances of each of these items from the array.
 
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+const transportation = data.reduce(function(obj, item) {
+  if (!obj[item]) {
+    obj[item] = 0;
+  }
+  obj[item] += 1;
+  return obj;
+}, {}); // using an empty object
+
+console.log(transportation);
+// { car: 5, truck: 3, bike: 2, walk: 2, van: 2 }
