@@ -204,6 +204,55 @@ const alpha = people.sort(function(lastOne, nextOne) {
 });
 console.table(alpha);
 
+/*
+┌─────────┬───────────────────────┐
+│ (index) │        Values         │
+├─────────┼───────────────────────┤
+│    0    │     'Beck, Glenn'     │
+│    1    │    'Becker, Carl'     │
+│    2    │   'Beckett, Samuel'   │
+│    3    │    'Beddoes, Mick'    │
+│    4    │   'Beecher, Henry'    │
+│    5    │  'Beethoven, Ludwig'  │
+│    6    │   'Begin, Menachem'   │
+│    7    │   'Belloc, Hilaire'   │
+│    8    │    'Bellow, Saul'     │
+│    9    │  'Ben-Gurion, David'  │
+│   10    │  'Benchley, Robert'   │
+│   11    │   'Benenson, Peter'   │
+│   12    │  'Benjamin, Walter'   │
+│   13    │     'Benn, Tony'      │
+│   14    │ 'Bennington, Chester' │
+│   15    │    'Benson, Leana'    │
+│   16    │     'Bent, Silas'     │
+│   17    │   'Bentsen, Lloyd'    │
+│   18    │     'Berger, Ric'     │
+│   19    │   'Bergman, Ingmar'   │
+│   20    │   'Berio, Luciano'    │
+│   21    │    'Berle, Milton'    │
+│   22    │   'Berlin, Irving'    │
+│   23    │     'Berne, Eric'     │
+│   24    │  'Bernhard, Sandra'   │
+│   25    │     'Berra, Yogi'     │
+│   26    │   'Berry, Wendell'    │
+│   27    │    'Berry, Halle'     │
+│   28    │    'Bethea, Erin'     │
+│   29    │   'Bevan, Aneurin'    │
+│   30    │     'Bevel, Ken'      │
+│   31    │    'Biden, Joseph'    │
+│   32    │   'Bierce, Ambrose'   │
+│   33    │     'Biko, Steve'     │
+│   34    │   'Billings, Josh'    │
+│   35    │    'Biondo, Frank'    │
+│   36    │ 'Birrell, Augustine'  │
+│   37    │     'Black, Elk'      │
+│   38    │     'Blair, Tony'     │
+│   39    │    'Blair, Robert'    │
+│   40    │   'Blake, William'    │
+└─────────┴───────────────────────┘
+
+*/
+
 // =================================================================================
 console.log('');
 
