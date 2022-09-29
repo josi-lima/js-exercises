@@ -121,13 +121,25 @@ console.log('');
 
 // Array.prototype.reduce()
 
-// 🚀 EXERCISE 4: How many years did all the inventors live all together?
+// 🚀 EXERCISE 4: How many years did the inventors live all together?
 
 const allYears = inventors.reduce((total, inventor) => {
   return total + (inventor.passed - inventor.year)
 }, 0); 
 // 0 is the initial value
 console.log(`The inventors lived ${allYears} years altogether.`); // 861
+
+// Longer version ===========================
+
+function findTotalYears() {
+  let totalYears = 0;
+
+  for (let index = 0; index < inventors.length; index += 1) {
+  totalYears += (inventors[index].passed - inventors[index].year);
+  }
+  return totalYears;
+}
+console.log(`The total amount of time they lived is ${findTotalYears()} years.`); // 861
 
 // =================================================================================
 console.log('');
