@@ -131,3 +131,34 @@ console.log(`The inventors lived ${allYears} years altogether.`); // 861
 
 // =================================================================================
 console.log('');
+
+// Array.prototype.sort()
+
+// 🚀 EXERCISE 4: Sort the inventors by years lived, starting with the person who lived the most on the top.
+
+const oldest = inventors.sort((personA, personB) => {
+  const lastPerson = personA.passed - personA.year;
+  const nextPerson = personB.passed - personB.year;
+  return lastPerson > nextPerson ? -1 : 1;
+});
+
+console.table(oldest);
+
+/*
+┌─────────┬─────────────┬───────────────┬──────┬────────┐
+│ (index) │    first    │     last      │ year │ passed │
+├─────────┼─────────────┼───────────────┼──────┼────────┤
+│    0    │   'Lise'    │   'Meitner'   │ 1878 │  1968  │
+│    1    │    'Max'    │   'Planck'    │ 1858 │  1947  │
+│    2    │   'Isaac'   │   'Newton'    │ 1643 │  1727  │
+│    3    │ 'Katherine' │  'Blodgett'   │ 1898 │  1979  │
+│    4    │   'Hanna'   │ 'Hammarström' │ 1829 │  1909  │
+│    5    │  'Galileo'  │   'Galilei'   │ 1564 │  1642  │
+│    6    │  'Albert'   │  'Einstein'   │ 1879 │  1955  │
+│    7    │ 'Nicolaus'  │ 'Copernicus'  │ 1473 │  1543  │
+│    8    │   'Marie'   │    'Curie'    │ 1867 │  1934  │
+│    9    │ 'Johannes'  │   'Kepler'    │ 1571 │  1630  │
+│   10    │ 'Sarah E.'  │    'Goode'    │ 1855 │  1905  │
+│   11    │    'Ada'    │  'Lovelace'   │ 1815 │  1852  │
+└─────────┴─────────────┴───────────────┴──────┴────────┘
+*/
