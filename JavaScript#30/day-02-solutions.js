@@ -84,6 +84,13 @@ const people = [
 
     // ================================================================================
         
-     // Array.prototype.findIndex()
+    // Array.prototype.findIndex()
     // 🚀 EXERCISE 5: Delete the comment with the ID of 823423.
+
+    const newComments = comments.splice(index, 1);
+    console.table(comments); // modified array
+
+    // .splice(index of the target element, number of items removed)
+    // .splice() modifies the content of an array
+
     
