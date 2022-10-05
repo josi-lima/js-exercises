@@ -61,6 +61,19 @@ const people = [
 
     // Array.prototype.find() --> .find() is like .filter(), but instead it returns just the first element that matches what you're looking for.
     // 🚀 EXERCISE 3: Find the comment with the ID of 823423.
+
+    const rightComment = comments.find(function (comment) {
+    if (comment.id === 823423) {
+      return true;
+    }
+    });
+    console.log(rightComment); // { text: 'Super good', id: 823423 }
+  
+    // Shorter solution ========================
+    const findComment = comments.find(comment => comment.id === 823423);
+    console.log(findComment);
+
+   // ================================================================================
         
 
     // Array.prototype.findIndex()
