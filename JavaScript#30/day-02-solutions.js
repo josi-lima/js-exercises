@@ -73,13 +73,17 @@ const people = [
     const findComment = comments.find(comment => comment.id === 823423);
     console.log(findComment);
 
-   // ================================================================================
+    // ================================================================================
         
-
     // Array.prototype.findIndex()
     // 🚀 EXERCISE 4: Find the comment with this same ID (823423).
-    
-    
+
+    const commentIndex = comments.findIndex(comment => comment.id === 823423);
+    console.log(`The index of the comment is ${commentIndex}.`);
+    // The index of the comment is 1.
+
+    // ================================================================================
+        
      // Array.prototype.findIndex()
     // 🚀 EXERCISE 5: Delete the comment with the ID of 823423.
     
