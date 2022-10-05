@@ -105,7 +105,24 @@ const people = [
 
      //Different  solution ========================
 
-    
-   
+     // .slice() accesses part of an array without modifying it
+     // .slice(starting index, end index) --> end index: not included 
 
-    
+     // spread syntax (...) allows an iterable, such as an array or string, to be expanded
+
+    const newComments = [
+    ...comments.slice(0, index),
+    ...comments.slice(index + 1)
+    ];
+    console.table(newComments);
+
+    /*  ┌─────────┬─────────────────────────────┬────────┐
+        │ (index) │            text             │   id   │
+        ├─────────┼─────────────────────────────┼────────┤
+        │    0    │        'Love this!'         │ 523423 │
+        │    1    │ 'Ramen is my fav food ever' │ 123523 │
+        │    2    │      'Nice Nice Nice!'      │ 542328 │
+        └─────────┴─────────────────────────────┴────────┘
+    */
+
+      
