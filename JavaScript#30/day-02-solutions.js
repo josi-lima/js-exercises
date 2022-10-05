@@ -90,7 +90,17 @@ const people = [
     const newComments = comments.splice(index, 1);
     console.table(comments); // modified array
 
+    /*  ┌─────────┬─────────────────────────────┬─────────┐
+        │ (index) │            text             │   id    │
+        ├─────────┼─────────────────────────────┼─────────┤
+        │    0    │        'Love this!'         │ 523423  │
+        │    1    │     'You are the best'      │ 2039842 │
+        │    2    │ 'Ramen is my fav food ever' │ 123523  │
+        │    3    │      'Nice Nice Nice!'      │ 542328  │
+        └─────────┴─────────────────────────────┴─────────┘
+    */
     // .splice(index of the target element, number of items removed)
     // .splice() modifies the content of an array
+   
 
     
