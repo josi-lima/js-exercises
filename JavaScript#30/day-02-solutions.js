@@ -59,7 +59,7 @@ const people = [
     console.log(allAdults); //false
         
 
-    // Array.prototype.find() --> .find() is like .filter(), but instead it returns just the one element you are looking for.
+    // Array.prototype.find() --> .find() is like .filter(), but instead it returns just the first element that matches what you're looking for.
     // 🚀 EXERCISE 3: Find the comment with the ID of 823423.
         
 
