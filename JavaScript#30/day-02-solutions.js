@@ -22,6 +22,20 @@ const people = [
     // Array.prototype.some() 
     // 🚀 EXERCISE 1: Check if at least one person is 19 or older.
     
+    // First solution ========================
+    const isOlder = people.some(person => {
+        if (2022 - person.year >= 19) {
+            return true;
+        }
+    });
+    console.log(isOlder);
+
+    // Second solution ========================
+    
+    
+
+
+    
           
     // Array.prototype.every() // 
     // 🚀 EXERCISE 2: Check if everyone is 19 or older.
