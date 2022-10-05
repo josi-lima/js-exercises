@@ -28,7 +28,7 @@ const people = [
             return true;
         }
     });
-    console.log(isOlder);
+    console.log(isOlder); // true
 
     // Second solution ========================
     
