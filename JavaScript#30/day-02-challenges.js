@@ -36,7 +36,7 @@ const people = [
     
     
      // Array.prototype.findIndex()
-    // 🚀 EXERCISE 4: Delete the comment with the ID of 823423.
+    // 🚀 EXERCISE 5: Delete the comment with the ID of 823423.
     
     
     
