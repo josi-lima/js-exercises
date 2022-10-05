@@ -23,7 +23,7 @@ const people = [
     // 🚀 EXERCISE 1: Check if at least one person is 19 or older.
     
           
-    // Array.prototype.every() // is everyone 19 or older?
+    // Array.prototype.every() // 
     // 🚀 EXERCISE 2: Check if everyone is 19 or older.
         
 
