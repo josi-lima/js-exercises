@@ -31,13 +31,30 @@ const people = [
     console.log(isOlder); // true
 
     // Second solution ========================
-    
-    
+    const isAdult = people.some(function (person) {
+    const currentYear = (new Date()).getFullYear();
+    if (currentYear - person.year >= 19) {
+      return true;
+    }
+    });
+   console.log(isAdult); //true
 
+    // Shorter solution ========================
+    const isYoungAdult = people.some(person => {
+    const currentYear = (new Date()).getFullYear();
+    return currentYear - person.year >= 19;     
+    });
+    console.log(isYoungAdult); //true
 
-    
+    // Shortest solution ========================
+    const isOlder19 = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+    console.log(isOlder19); //true
+
+    // ================================================================================
+
+        
           
-    // Array.prototype.every() // 
+    // Array.prototype.every() 
     // 🚀 EXERCISE 2: Check if everyone is 19 or older.
         
 
