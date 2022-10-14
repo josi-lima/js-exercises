@@ -38,7 +38,24 @@ const minPrice = prices.reduce((min, price) => {
 });
 console.log(`The minimum price is $${minPrice}.`); // $1.99
 
-// ====== LONGER VERSION ==========================================
+// ====== LONGER VERSION (Dynamic function) ==================================
+
+function findMinimumValue() {
+  
+  const lowPrices = [4.99, 10.50, 1.99, 45.79, 3.60];
+  let minimumNumber = lowPrices[0];
+  
+  for (let index = 0; index < lowPrices.length; index += 1) {
+    if (lowPrices[index] < minimumNumber) {
+      minimumNumber = lowPrices[index];
+    }
+  }
+  return minimumNumber;
+}
+
+console.log(`The lowest price is $${findMinimumValue()}.`); // $1.99
+
+// ====== LONGER VERSION (Dynamic function) ==================================
 
 function findMinValue(numbers) {
   
@@ -52,9 +69,10 @@ function findMinValue(numbers) {
   return minNumber;
 }
 
-console.log(findMinValue([102, 8, 37, 89])); // 8
+console.log(`The minimum number is ${findMinValue([102, 8, 37, 89])}.`); // 8
 
 // =============================================================================== 
+
 console.log('');
 
 //  🚀 EXERCISE 3: Find the maximum number from the array 'prices'.
