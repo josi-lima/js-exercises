@@ -38,7 +38,7 @@ const minPrice = prices.reduce((min, price) => {
 });
 console.log(`The minimum price is $${minPrice}.`); // $1.99
 
-// ====== LONGER VERSION (Dynamic function) ==================================
+// ====== LONGER VERSION ==================================================
 
 function findMinimumValue() {
   
