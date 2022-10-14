@@ -38,7 +38,15 @@ const minPrice = prices.reduce((min, price) => {
 });
 console.log(`The minimum price is $${minPrice}.`); // $1.99
 
-// ====== LONGER VERSION ==================================================
+// ========== SHORTEST VERSION =======================================
+
+const randomPrices = [8.49, 110.45, 63.90, 5.99, 1.72];
+
+const minPrice = randomPrices.reduce((min, price) => price < min ? price : min);
+
+console.log(`The minimum price is $${minPrice}.`); // $1.72
+
+// ========== LONGER VERSION ===========================================
 
 function findMinimumValue() {
   
