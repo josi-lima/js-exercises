@@ -38,6 +38,22 @@ const minPrice = prices.reduce((min, price) => {
 });
 console.log(`The minimum price is $${minPrice}.`); // $1.99
 
+// ====== LONGER VERSION ==========================================
+
+function findMinValue(numbers) {
+  
+  let minNumber = numbers[0];
+  
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] < minNumber) {
+      minNumber = numbers[index];
+    }
+  }
+  return minNumber;
+}
+
+console.log(findMinValue([102, 8, 37, 89])); // 8
+
 // =============================================================================== 
 console.log('');
 
