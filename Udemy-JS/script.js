@@ -19,7 +19,7 @@ const highPrices = [300.50, 209.99, 5523.50, 3900.99, 4950.99];
 const totalSum = highPrices.reduce((sum, highPrice) => {
   return sum + highPrice;
 })
-// const totalSum = highPrices.reduce((sum, highPrice) => sum + highPrice);  ==== shorten version ====
+// const totalSum = highPrices.reduce((sum, highPrice) => sum + highPrice);     ==== shorten version ====
 
 console.log(`The second total amount is $${totalSum}.`); // $14885.97
 
