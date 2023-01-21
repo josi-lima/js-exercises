@@ -110,8 +110,8 @@ function calculateDinnerTotal(dinnerPrice) {
 
 console.log(
 `Dinner's value: $120.  
-Waiter's tip: $${calculateTip(120)}. 
-The total price of your dinner is $${calculateDinnerTotal(120)}. 
+Waiter's tip: $${calculateTip(120)}.  // $12
+The total price of your dinner is $${calculateDinnerTotal(120)}.  // $132
 Come back soon!`);
 
 // ========================================================================================================
@@ -136,8 +136,8 @@ function calculateInstallments(productPrice) {
 
 console.log(
 `Product's price: $60.  
-In cash/debit card: $${calculateDiscount(60)}. 
-Or 3x of: $${calculateInstallments(60)}. 
+In cash/debit card: $${calculateDiscount(60)}.  // $54
+Or 3x of: $${calculateInstallments(60)}.  //$20
 Have a great day!`);
 
 // ========================================================================================================
