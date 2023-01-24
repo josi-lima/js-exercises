@@ -161,7 +161,3 @@ console.log('');
 /* 🚀 Exercise #4
 */
 
-#!/bin/bash
-
-read name
-echo "Welcome $name"
