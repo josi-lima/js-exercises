@@ -42,7 +42,7 @@ console.log(`The minimum price is $${minPrice}.`); // $1.99
 
 const randomPrices = [8.49, 110.45, 63.90, 5.99, 1.72];
 
-const minPrice = randomPrices.reduce((min, price) => price < min ? price : min);
+const minPrice = randomPrices.reduce((min, price) => (price < min ? price : min));
 
 console.log(`The minimum price is $${minPrice}.`); // $1.72
 
