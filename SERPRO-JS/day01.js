@@ -68,10 +68,25 @@ console.log(checkEvenOrOdd(17))
 
 // 🚀 7. Given a list of numbers, find the maximum and minimum values.
 
+const findMaxNumber = (numbers) => numbers.reduce((max, num) => {
+  return num > max ? num : max;
+});
+console.log(findMaxNumber([5, 24, 7, 63, 145, 88, 12, 37]));  // 145
+
+console.log(Math.max(56, 89, 110, 23, 4, 38, 9))  // 110
+
+// ------------------------------
+
+const findMinNumber = (numbers) => numbers.reduce((max, num) => {
+  return num < max ? num : max;
+});
+console.log(findMinNumber([5, 24, 7, 63, 145, 88, 12, 37]));   // 5
+
+console.log(Math.min(56, 89, 110, 23, 4, 38, 9))  // 4
 
 // ==================================================================
 
-// 🚀 8. Create a Python function to check if a given string is a palindrome.
+// 🚀 8. Create a function to check if a given string is a palindrome.
 
 
 // ==================================================================
