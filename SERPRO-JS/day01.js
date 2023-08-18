@@ -88,6 +88,13 @@ console.log(Math.min(56, 89, 110, 23, 4, 38, 9))  // 4
 
 // 🚀 8. Create a function to check if a given string is a palindrome.
 
+const isPalindrome = (string) => {
+  string = string.toLowerCase().replaceAll(' ', '');
+  return string === string.split('').reverse('').join('');
+}
+console.log(isPalindrome('Was it a car or a cat I saw'));  // true
+
+// replaceAll() method of string values returns a new string with all matches of a pattern replaced by a replacement.
 
 // ==================================================================
 
