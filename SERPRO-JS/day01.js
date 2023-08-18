@@ -16,12 +16,12 @@ console.log(firstSum(5,10));
 
 // ------------------------------
 
-// const secondSum = (numA, numB) => {
-//   numA = parseInt(prompt("Please, enter the first number: "));
-//   numB = parseInt(prompt("Please, enter the second number: "));
-//   return numA + numB;
-// }
-// console.log(secondSum())
+const secondSum = (numA, numB) => {
+  numA = parseInt(prompt("Please, enter the first number: "));
+  numB = parseInt(prompt("Please, enter the second number: "));
+  return numA + numB;
+}
+console.log(secondSum())
 
 // ==================================================================
 
@@ -49,12 +49,12 @@ console.log(calculateRecArea(5.5, 7.0))
 
 // 🚀 5. Create a program that takes a user's name and age as input and prints a greeting message.
 
-// const greetUser = () => {
-//   firstName = prompt("What's your first name? ");
-//   age = prompt("How old are you? ");
-//   console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
-// }
-// greetUser();
+const greetUser = () => {
+  firstName = prompt("What's your first name? ");
+  age = prompt("How old are you? ");
+  console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
+}
+greetUser();
 
 
 // ==================================================================
@@ -77,8 +77,8 @@ console.log(Math.max(56, 89, 110, 23, 4, 38, 9))  // 110
 
 // ------------------------------
 
-const findMinNumber = (numbers) => numbers.reduce((max, num) => {
-  return num < max ? num : max;
+const findMinNumber = (numbers) => numbers.reduce((min, num) => {
+  return num < min ? num : min;
 });
 console.log(findMinNumber([5, 24, 7, 63, 145, 88, 12, 37]));   // 5
 
@@ -98,25 +98,25 @@ console.log(isPalindrome('Was it a car or a cat I saw'));  // true
 
 // ==================================================================
 
-// 🚀 9. Calculate the compound interest for a given amount, interest rate, and time period.
+// 🚀 9. Given a list of integers, find the sum of all positive numbers.
 
 
 // ==================================================================
 
-// 🚀 10. Write a program that converts a given number of days into years, weeks, and days.
+// 🚀 10. Create a program that takes a sentence as input and counts the number of words in it.
 
 
 // ==================================================================
 
-// 🚀 11. Given a list of integers, find the sum of all positive numbers.
+// 🚀 11. Write a program that converts a given number of days into years, weeks, and days.
 
 
 // ==================================================================
 
-// 🚀 12. Create a program that takes a sentence as input and counts the number of words in it.
+// 🚀 12. Implement a program that swaps the values of two variables.
 
 
 // ==================================================================
 
-// 🚀 13. Implement a program that swaps the values of two variables.
+// 🚀 13. Calculate the compound interest for a given amount, interest rate, and time period.
 
