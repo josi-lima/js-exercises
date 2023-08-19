@@ -90,9 +90,17 @@ const people = [
     // .splice(index of the target element, number of items removed)
     // .splice() modifies the content of an array
 
-    const newComments = comments.splice(index, 1);
-    console.table(comments); // modified array
+    const newComments01 = comments.splice(1, 1);
 
+    console.table(newComments01); // line sliced
+    /*  ┌─────────┬──────────────┬────────┐
+        │ (index) │     text     │   id   │
+        ├─────────┼──────────────┼────────┤ 
+        │    0    │ 'Super good' │ 823423 │
+        └─────────┴──────────────┴────────┘
+    */
+
+    console.table(comments); // modified array
     /*  ┌─────────┬─────────────────────────────┬─────────┐
         │ (index) │            text             │   id    │
         ├─────────┼─────────────────────────────┼─────────┤
@@ -110,11 +118,11 @@ const people = [
 
      // spread syntax (...) allows an iterable, such as an array or string, to be expanded
 
-    const newComments = [
-    ...comments.slice(0, index),
-    ...comments.slice(index + 1)
+    const newComments02 = [
+    ...comments.slice(0, 1),
+    ...comments.slice(1 + 1)
     ];
-    console.table(newComments);
+    console.table(newComments02);
 
     /*  ┌─────────┬─────────────────────────────┬────────┐
         │ (index) │            text             │   id   │
