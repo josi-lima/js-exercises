@@ -50,8 +50,8 @@ console.log(calculateRecArea(5.5, 7.0))   // 38.5
 // 🚀 5. Create a program that takes a user's name and age as input and prints a greeting message.
 
 const greetUser = () => {
-  firstName = prompt("What's your first name? ");
-  age = prompt("How old are you? ");
+  let firstName = prompt("What's your first name? ");
+  let age = prompt("How old are you? ");
   console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
 }
 greetUser();
