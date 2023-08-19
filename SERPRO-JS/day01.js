@@ -16,12 +16,12 @@ console.log(firstSum(5,10));  // 15
 
 // ------------------------------
 
-// const secondSum = (numA, numB) => {
-//   numA = parseInt(prompt("Please, enter the first number: "));
-//   numB = parseInt(prompt("Please, enter the second number: "));
-//   return numA + numB;
-// }
-// console.log(secondSum())
+const secondSum = (numA, numB) => {
+  numA = parseInt(prompt("Please, enter the first number: "));
+  numB = parseInt(prompt("Please, enter the second number: "));
+  return numA + numB;
+}
+console.log(secondSum())
 
 // ==================================================================
 
@@ -49,12 +49,12 @@ console.log(calculateRecArea(5.5, 7.0))   // 38.5
 
 // 🚀 5. Create a program that takes a user's name and age as input and prints a greeting message.
 
-// const greetUser = () => {
-//   firstName = prompt("What's your first name? ");
-//   age = prompt("How old are you? ");
-//   console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
-// }
-// greetUser();
+const greetUser = () => {
+  firstName = prompt("What's your first name? ");
+  age = prompt("How old are you? ");
+  console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
+}
+greetUser();
 
 
 // ==================================================================
@@ -113,43 +113,48 @@ console.log(sumPositiveNumbers([5, 2, 3, -1, -8, 2]));  // 12
 
 // 🚀 10. Create a program that takes a sentence as input and counts the number of times a word appears in it.
 
-// const countWords = (text) => {
-//   text = text.toLowerCase().split();
-//   let wordCount = [];
+const countWords = (string) => {
+  let data = string.toLowerCase().split(' ');
 
-//   for (let word of text) {
-//     if (word )
-
-//   }
-
-
-// }
-
-
-
-
-// def countWords(text):
-//   word_count = {}
-  
-//   for word in text.lower().split():
-//     if word in word_count:
-//       word_count[word] += 1
-//     else:
-//       word_count[word] = 1
-//   print(word_count)
-
+  const count = data.reduce((obj, item) => {
+    if (!obj[item]) { 
+      obj[item] = 0;
+    }
+    obj[item] += 1;
+    return obj;
+  }, {}); 
+  return count;
+}
+console.log(countWords("I would love to hear a love story about a place full of love"));
 
 // ==================================================================
 
-// 🚀 11. Write a program that converts a given number of days into years, weeks, and days.
+// 🚀 11. Write a program that converts a given number of days into years, months and weeks.
 
+const calendar = (days) => {
+  let week = Math.floor(days / 7);
+  let month = Math.floor(days / 30);
+  let year = Math.floor(days / 365);
+  
+  console.log(`${days} day(s): ${week} week(s).`)
+  console.log(`${days} day(s): ${month} month(s).`)
+  console.log(`${days} day(s): ${year} year(s).`)
+}
+calendar(30)
 
 // ==================================================================
 
 // 🚀 12. Implement a program that swaps the values of two variables.
 
+const swapValues = (a, b) => {
+  let temporary = a;
+  a = b;
+  b = temporary;
+  console.log(a, b);
+}
+swapValues('first', 'second');
 
 // ==================================================================
 
-// 🚀 13. Calculate the compound interest for a given amount, interest rate, and time period.
+
 
