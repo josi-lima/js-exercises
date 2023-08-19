@@ -12,16 +12,16 @@ greeting();
 const firstSum = (numA, numB) => {
   return numA + numB;
 }
-console.log(firstSum(5,10));
+console.log(firstSum(5,10));  // 15
 
 // ------------------------------
 
-const secondSum = (numA, numB) => {
-  numA = parseInt(prompt("Please, enter the first number: "));
-  numB = parseInt(prompt("Please, enter the second number: "));
-  return numA + numB;
-}
-console.log(secondSum())
+// const secondSum = (numA, numB) => {
+//   numA = parseInt(prompt("Please, enter the first number: "));
+//   numB = parseInt(prompt("Please, enter the second number: "));
+//   return numA + numB;
+// }
+// console.log(secondSum())
 
 // ==================================================================
 
@@ -29,10 +29,10 @@ console.log(secondSum())
 // Reminder: C = F – 32 / 1.8, which means C * 1.8 + 32
 
 const convertCelsiusToFahr = (degCelsius) => {
-  degFahr = degCelsius * 1.8 + 32;
+  let degFahr = degCelsius * 1.8 + 32;
   return degFahr;
 }
-console.log(convertCelsiusToFahr(23.4));
+console.log(convertCelsiusToFahr(23.4));  // 74.12
 
 // ==================================================================
 
@@ -40,21 +40,21 @@ console.log(convertCelsiusToFahr(23.4));
 // The formula for the area, 'A' of a rectangle whose length and width are 'l' and 'w' respectively is the product of length and width, that is, "A = l × w".
 
 const calculateRecArea = (length, width) => {
-  area = length * width;
+  let area = length * width;
   return area;
 }
-console.log(calculateRecArea(5.5, 7.0))
+console.log(calculateRecArea(5.5, 7.0))   // 38.5
 
 // ==================================================================
 
 // 🚀 5. Create a program that takes a user's name and age as input and prints a greeting message.
 
-const greetUser = () => {
-  firstName = prompt("What's your first name? ");
-  age = prompt("How old are you? ");
-  console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
-}
-greetUser();
+// const greetUser = () => {
+//   firstName = prompt("What's your first name? ");
+//   age = prompt("How old are you? ");
+//   console.log(`Welcome, ${firstName}! Today's your birthday! You're turning ${age}.`)
+// }
+// greetUser();
 
 
 // ==================================================================
@@ -62,7 +62,7 @@ greetUser();
 // 🚀 6. Write a program to check if a number is even or odd.
 
 const checkEvenOrOdd = (num) => num % 2 === 0 ? "even" : "odd";
-console.log(checkEvenOrOdd(17))
+console.log(checkEvenOrOdd(17))  // odd
 
 // ==================================================================
 
@@ -100,10 +100,43 @@ console.log(isPalindrome('Was it a car or a cat I saw'));  // true
 
 // 🚀 9. Given a list of integers, find the sum of all positive numbers.
 
+const sumPositiveNumbers = (numbers) => {
+  let sum = 0;
+  for (let num of numbers) {
+    if (num > 0) { sum += num; }
+  }
+  return sum;
+}
+console.log(sumPositiveNumbers([5, 2, 3, -1, -8, 2]));  // 12
 
 // ==================================================================
 
-// 🚀 10. Create a program that takes a sentence as input and counts the number of words in it.
+// 🚀 10. Create a program that takes a sentence as input and counts the number of times a word appears in it.
+
+// const countWords = (text) => {
+//   text = text.toLowerCase().split();
+//   let wordCount = [];
+
+//   for (let word of text) {
+//     if (word )
+
+//   }
+
+
+// }
+
+
+
+
+// def countWords(text):
+//   word_count = {}
+  
+//   for word in text.lower().split():
+//     if word in word_count:
+//       word_count[word] += 1
+//     else:
+//       word_count[word] = 1
+//   print(word_count)
 
 
 // ==================================================================
