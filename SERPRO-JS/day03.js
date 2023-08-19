@@ -33,8 +33,12 @@
 
 // ==================================================================
 
-// 🚀 9. Create a loop that prints all prime numbers between 1 and 50.
+// 🚀 9. Write a program to check if a number is prime.
 
 // ==================================================================
 
-// 🚀 10. Create a program that generates the Fibonacci sequence up to a given number of terms.
+// 🚀 10. Create a loop that prints all prime numbers between 1 and 50.
+
+// ==================================================================
+
+// 🚀 11. Create a program that generates the Fibonacci sequence up to a given number of terms.

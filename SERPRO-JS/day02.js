@@ -3,14 +3,29 @@
 
 // 🚀 1.Create a list of fruits and access elements using indexing.
 
+const selectFruits = () => {
+  fruits = ['strawberry', 'papaya', 'lemon', 'pineapple', 'banana', 'blueberry'];
+
+  console.log(fruits[0]);             // strawberry
+  console.log(fruits.slice(2, 5));    // [ 'lemon', 'pineapple', 'banana' ]
+  console.log(fruits.at(-1))          // blueberry
+}
+selectFruits();
+
+// .slice() accesses part of an array without modifying it
+
 // ==================================================================
 
 // 🚀 2. Given a list of numbers, find the sum and average.
+
+
 
 // ==================================================================
 
 // 🚀 3. Create a program that takes a temperature in Fahrenheit and converts it to Celsius.
 // Reminder: C = F – 32 / 1.8
+
+
 
 // ==================================================================
 
@@ -23,7 +38,7 @@ const calculateCircle = (radius) => {
   const pi = Math.PI;
   let area = (pi * radius ** 2).toFixed(2);
   let circumference = (2 * pi * radius).toFixed(2);
-  
+
   console.log(`Given the radius ${radius}: the area is ${area} and the circumference is ${circumference}.`);  
 }
 calculateCircle(3.5);
@@ -60,4 +75,4 @@ calculateCircle(3.5);
 
 // ==================================================================
 
-// 🚀 12. Write a program to check if a number is prime.
+
