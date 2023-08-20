@@ -37,7 +37,9 @@ console.log(convertCelsiusToFahr(23.4));  // 74.12
 // ==================================================================
 
 // 🚀 4. Write a program to calculate the area of a rectangle given its length and width.
-// The formula for the area, 'A' of a rectangle whose length and width are 'l' and 'w' respectively is the product of length and width, that is, "A = l × w".
+
+// Note: the formula to calculate the area of a rectangle: "A (area) = l (length) * w (width)".
+
 
 const calculateRecArea = (length, width) => {
   let area = length * width;
@@ -147,12 +149,12 @@ calendar(30)
 // 🚀 12. Implement a program that swaps the values of two variables.
 
 const swapValues = (a, b) => {
-  let temporary = a;
-  a = b;
-  b = temporary;
+  let temporary = a;   // temp = first
+  a = b;               // a = second
+  b = temporary;       // b = first
   console.log(a, b);
 }
-swapValues('first', 'second');
+swapValues('first', 'second');  // second first
 
 // ==================================================================
 
