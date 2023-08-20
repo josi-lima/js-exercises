@@ -18,14 +18,28 @@ selectFruits();
 
 // 🚀 2. Given a list of numbers, find the sum and average.
 
-
+const sumOfNums = (numbers) => {
+  let sum = 0;
+  for (let num of numbers) {
+    sum += num;
+  }
+  let average = sum / 2;
+  console.log(`Sum: ${sum}. Average: ${average}.`);
+}
+sumOfNums([5, 7, 1, 4, 3, 10, 1]);   // Sum: 31. Average: 15.5 
 
 // ==================================================================
 
 // 🚀 3. Create a program that takes a temperature in Fahrenheit and converts it to Celsius.
 // Reminder: C = F – 32 / 1.8
 
+const fahrToCelsius = (degFahr) => {
+  let degCelsius = ((degFahr - 32) / 1.8).toFixed(1);
+  return degCelsius;
+}
+console.log(fahrToCelsius(60))   // 15.6
 
+// use the toFixed() method to limit decimal places by specifying its number.
 
 // ==================================================================
 
@@ -42,8 +56,6 @@ const calculateCircle = (radius) => {
   console.log(`Given the radius ${radius}: the area is ${area} and the circumference is ${circumference}.`);  
 }
 calculateCircle(3.5);
-
-// use the toFixed() method to limit decimal places by specifying its number.
 
 // ==================================================================
 
@@ -63,15 +75,11 @@ calculateCircle(3.5);
 
 // ==================================================================
 
-// 🚀 9. Calculate the compound interest for a given amount, interest rate, and time period.
+// 🚀 9. Implement a program that converts a given number of minutes into hours and minutes.
 
 // ==================================================================
 
-// 🚀 10. Implement a program that converts a given number of minutes into hours and minutes.
-
-// ==================================================================
-
-// 🚀 11. Create a function to count the number of vowels in a given string.
+// 🚀 10. Create a function to count the number of vowels in a given string.
 
 // ==================================================================
 
