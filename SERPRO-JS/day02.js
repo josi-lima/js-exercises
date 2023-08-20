@@ -61,17 +61,46 @@ calculateCircle(3.5);
 
 // 🚀 5. Create a function to reverse a given string.
 
+const reverseStr = (string) => {
+  string = string.split('').reverse().join('');
+  return string;
+}
+console.log(reverseStr('chocolate'));   // etalocohc
+
+// https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
+
 // ==================================================================
 
 // 🚀 6. Given a list of names, concatenate them into a single string separated by spaces.
+
+const concatNames = (names) => {
+  let concat = names.join(' ');
+  return concat;
+}
+console.log(concatNames(['Jim', 'Kim', 'Lucy']));
+// Jim Kim Lucy
 
 // ==================================================================
 
 // 🚀 7. Create a program that takes a sentence as input and counts the number of words in it.
 
+const countWords = (phrase) => {
+  const sentence = phrase.split(' ');
+  return sentence.filter((word) => word !== '').length;
+}
+console.log(countWords('She said she would stay.'))  // 5
+
 // ==================================================================
 
-// 🚀 8. Write a program to check if a given string is a pangram (contains all letters of the alphabet).
+// 🚀 8. Create a function that will capitalize the first letter of each word in a text.
+
+const capitalizeLetters = (text) => {
+  let fullText = text.split(' ');
+  const textCap = fullText.map((word) => word[0].toUpperCase() + word.slice(1)).join(' ');
+  return textCap; 
+}
+console.log(capitalizeLetters('movie: one day after tomorrow'));
+// Movie: One Day After Tomorrow
 
 // ==================================================================
 
