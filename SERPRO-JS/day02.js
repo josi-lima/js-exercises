@@ -104,12 +104,26 @@ console.log(capitalizeLetters('movie: one day after tomorrow'));
 
 // ==================================================================
 
-// 🚀 9. Implement a program that converts a given number of minutes into hours and minutes.
+// 🚀 9. Create a function to count the number of vowels in a given string.
+
+const countVowels = (str) => {
+  let count = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let letter of str.toLowerCase()) {
+    for (let v of vowels) {
+      if (letter === v) { count += 1; }
+    }
+  }
+  return count;
+}
+console.log(countVowels("If you're not positive energy, you're negative energy."));  // 20
 
 // ==================================================================
 
-// 🚀 10. Create a function to count the number of vowels in a given string.
+// 🚀 10. Implement a program that converts a given number of minutes into hours and minutes.
 
 // ==================================================================
+
 
 
