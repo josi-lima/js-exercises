@@ -37,6 +37,37 @@
 
 // ==================================================================
 
-// 🚀 10. Calculate the compound interest for a given amount, interest rate, and time period.
+// 🚀 10. The following list contains elements with the proprieties: name and age.
+// Return the people whose age is equal or greater than 30 years old.
+
+const people = [
+  { name: 'Harry', age: 25 },
+  { name: 'Mary', age: 30 },
+  { name: 'Peter', age: 20 },
+  { name: 'Amy', age: 38 },
+];
+
+const over30 = people.filter(({ age }) => age >= 30);
+
+console.log(over30)
+// [ { name: 'Mary', age: 30 }, { name: 'Amy', age: 38 } ]
+
+// ==================================================================
+
+// 🚀 11. The next list shows a few famous basketball players. Create a function that returns only the players who are 200 centimeters or more tall.
+
+const players = [
+  { name: 'Michael Jordan', height: 198, team: 'Chicago Bulls' },
+  { name: 'LeBron James', height: 203, team: 'Los Angeles Lakers' },
+  { name: 'Kobe Bryant', height: 198, team: 'Los Angeles Lakers' },
+  { name: 'Stephen Curry', height: 191, team: 'Golden State Warriors' },
+  { name: 'Kevin Durant', height: 211, team: 'Brooklyn Nets' },
+];
+
+const tallPlayers = players.filter(({ height }) => height > 200);
+
+console.log(tallPlayers);
+// [ { name: 'LeBron James', height: 203, team: 'Los Angeles Lakers' },
+//  { name: 'Kevin Durant', height: 211, team: 'Brooklyn Nets' } ]
 
 // ==================================================================

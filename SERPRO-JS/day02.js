@@ -88,7 +88,7 @@ const countWords = (phrase) => {
   const sentence = phrase.split(' ');
   return sentence.filter((word) => word !== '').length;
 }
-console.log(countWords('She said she would stay.'))  // 5
+console.log(countWords('She said she would stay.'));  // 5
 
 // ==================================================================
 
@@ -122,8 +122,3 @@ console.log(countVowels("If you're not positive energy, you're negative energy."
 // ==================================================================
 
 // 🚀 10. Implement a program that converts a given number of minutes into hours and minutes.
-
-// ==================================================================
-
-
-

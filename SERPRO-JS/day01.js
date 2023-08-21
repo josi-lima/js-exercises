@@ -64,7 +64,7 @@ greetUser();
 // 🚀 6. Write a program to check if a number is even or odd.
 
 const checkEvenOrOdd = (num) => num % 2 === 0 ? "even" : "odd";
-console.log(checkEvenOrOdd(17))  // odd
+console.log(checkEvenOrOdd(17));  // odd
 
 // ==================================================================
 
@@ -75,7 +75,7 @@ const findMaxNumber = (numbers) => numbers.reduce((max, num) => {
 });
 console.log(findMaxNumber([5, 24, 7, 63, 145, 88, 12, 37]));  // 145
 
-console.log(Math.max(56, 89, 110, 23, 4, 38, 9))  // 110
+console.log(Math.max(56, 89, 110, 23, 4, 38, 9));  // 110
 
 // ------------------------------
 
@@ -84,7 +84,7 @@ const findMinNumber = (numbers) => numbers.reduce((min, num) => {
 });
 console.log(findMinNumber([5, 24, 7, 63, 145, 88, 12, 37]));   // 5
 
-console.log(Math.min(56, 89, 110, 23, 4, 38, 9))  // 4
+console.log(Math.min(56, 89, 110, 23, 4, 38, 9));  // 4
 
 // ==================================================================
 
@@ -138,11 +138,11 @@ const calendar = (days) => {
   let month = Math.floor(days / 30);
   let year = Math.floor(days / 365);
   
-  console.log(`${days} day(s): ${week} week(s).`)
-  console.log(`${days} day(s): ${month} month(s).`)
-  console.log(`${days} day(s): ${year} year(s).`)
+  console.log(`${days} day(s): ${week} week(s).`);
+  console.log(`${days} day(s): ${month} month(s).`);
+  console.log(`${days} day(s): ${year} year(s).`);
 }
-calendar(30)
+calendar(30);
 
 // ==================================================================
 
