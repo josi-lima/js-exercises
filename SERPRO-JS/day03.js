@@ -3,17 +3,47 @@
 
 // 🚀 1. Write a program that checks if a given number is positive, negative, or zero.
 
+const checkNumbers = (num) => {
+  if (num > 0) return 'positive';
+  else if (num < 0) return 'negative';
+  else return 'zero';
+}
+console.log(checkNumbers(-5));   // negative
+
 // ==================================================================
 
 // 🚀 2. Create a loop that prints the first 10 even numbers.
+
+const evenNumbers = (num) => {
+  for (let index = 0; index <= num; index += 2) {
+    console.log(index);
+  }
+}
+evenNumbers(10);
 
 // ==================================================================
 
 // 🚀 3. Write a program that calculates the factorial of a given number.
 
+const factorial = (num) => {
+  let factor = 1;
+
+  for (let index = 1; index <= num; index += 1) {
+    factor *= index;
+  }
+  return factor;
+}
+console.log(factorial(5));   // 120
+
 // ==================================================================
 
 // 🚀 4. Create a program that takes a year as input and checks if it is a leap year or not.
+
+const isLeapYear = (year) => { 
+  return (year % 400 === 0) || (year % 100 !== 0 && year % 4 === 0) 
+          ? 'leap year' : 'not a leap year';
+}
+console.log(isLeapYear(2024));   // leap year
 
 // ==================================================================
 
