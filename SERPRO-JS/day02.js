@@ -121,4 +121,3 @@ console.log(countVowels("If you're not positive energy, you're negative energy."
 
 // ==================================================================
 
-// 🚀 10. Implement a program that converts a given number of minutes into hours and minutes.

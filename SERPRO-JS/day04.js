@@ -13,7 +13,7 @@
 
 // ==================================================================
 
-// 🚀 4. Calculate the area of a triangle given its base and height using a function. Base and height must be greater than 0.
+// 🚀 4. Calculate the area of a triangle given its base and height. Base and height must be greater than 0.
 
 // ==================================================================
 
@@ -29,7 +29,7 @@
 
 // ==================================================================
 
-// 🚀 8. Implement a function to check if a given year is a leap year or not.
+// 🚀 8. Create a function that will receive two lists of numbers as arguments and return a list composed of all the numbers that are either in the first list or second list, but not in both.
 
 // ==================================================================
 
@@ -41,6 +41,4 @@
 
 // # ==================================================================
 
-// 🚀 11. Calculate the compound interest for a given amount, interest rate, and time period.
 
-// ==================================================================
