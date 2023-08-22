@@ -77,7 +77,15 @@ console.log(namesWithA(['Amy', 'Jose', 'amir', 'Renato', 'Adelaide']));
 
 // 🚀 7. Implement a program that prints the multiplication table of a given number.
 
+const multiplyTable = (number) => {
 
+  for (let index = 1; index <= 10; index += 1) {
+    let result = number * index;
+    console.log(`${number} * ${index} = ${result}`);
+  }
+}
+multiplyTable(7);
+// 7 * 1 = 7 (...)
 
 // ==================================================================
 
@@ -96,8 +104,19 @@ console.log(findWordsLastVowel(['bingo', 'girl', 'table', 'banana', 'tall', 'Jap
 
 // ==================================================================
 
-// 🚀 9. Write a program to check if a number is prime.
+// 🚀 9. Implement a program that prints the multiplication table of a given number using recursion.
 
+const multiplyWithRecursion = (number, index = 1) => {
+
+  if (index === 11) {
+    return;
+  }
+  console.log(`${number} * ${index} = ${number * index}`);
+  index += 1;
+  multiplyWithRecursion(number, index);
+}
+multiplyWithRecursion(2)
+// 2 * 1 = 2 (...)
 
 // ==================================================================
 
