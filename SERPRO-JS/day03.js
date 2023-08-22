@@ -49,21 +49,55 @@ console.log(isLeapYear(2024));   // leap year
 
 // 🚀 5. Given a list of integers, find all the even numbers and store them in a new list.
 
+const evenNumStored = (numbers) => {
+  store = [];
+  for (let index = 0; index <= numbers.length; index += 1) {
+    if (numbers[index] % 2 === 0) { 
+      store.push(numbers[index]);
+    }
+  }
+  return store;  
+}
+console.log(evenNumStored([7, 89, 32, 14, 22, 6, 90]));
+// [ 32, 14, 22, 6, 90 ]
+
 // ==================================================================
 
 // 🚀 6. Given a list of names, print all names starting with the letter 'A'.
+
+const namesWithA = (names) => {
+
+  const listA = names.filter((name) => name[0].toLowerCase() === 'A'.toLowerCase());
+  return listA;
+}
+console.log(namesWithA(['Amy', 'Jose', 'amir', 'Renato', 'Adelaide']));
+// [ 'Amy', 'amir', 'Adelaide' ]
 
 // ==================================================================
 
 // 🚀 7. Implement a program that prints the multiplication table of a given number.
 
+
+
 // ==================================================================
 
-// 🚀 8. Given a list of words, count the number of words with more than five characters.
+// 🚀 8. Given a list of words, print all the words ending with a vowel.
+
+const findWordsLastVowel = (words) => {
+
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const lastVowel = words.filter((word) => {
+    return vowels.some((vowel) => word.at(-1) === vowel)
+  });
+  return lastVowel;
+}
+console.log(findWordsLastVowel(['bingo', 'girl', 'table', 'banana', 'tall', 'Japanese']));
+// [ 'bingo', 'table', 'banana', 'Japanese' ]
 
 // ==================================================================
 
 // 🚀 9. Write a program to check if a number is prime.
+
 
 // ==================================================================
 

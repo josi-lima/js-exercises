@@ -13,7 +13,8 @@
 
 // ==================================================================
 
-// 🚀 4. Given a list of words, print all the words ending with a vowel.
+// 🚀 4. Given a list of words, count the number of words with more than five characters. 
+
 
 // ==================================================================
 

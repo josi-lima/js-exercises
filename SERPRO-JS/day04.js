@@ -9,7 +9,7 @@
 
 // ==================================================================
 
-// 🚀 3. Implement a function that returns the factorial of a given number using recursion.
+// 🚀 3. Given a list of words, print the words which contain all the vowels.
 
 // ==================================================================
 
