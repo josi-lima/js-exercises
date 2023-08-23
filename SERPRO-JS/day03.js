@@ -112,8 +112,7 @@ const multiplyWithRecursion = (number, index = 1) => {
     return;
   }
   console.log(`${number} * ${index} = ${number * index}`);
-  index += 1;
-  multiplyWithRecursion(number, index);
+  return multiplyWithRecursion(number, index + 1);
 }
 multiplyWithRecursion(2)
 // 2 * 1 = 2 (...)
