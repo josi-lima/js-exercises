@@ -16,9 +16,9 @@ console.log(firstSum(5,10));  // 15
 
 // ------------------------------
 
-const secondSum = (numA, numB) => {
-  numA = parseInt(prompt("Please, enter the first number: "));
-  numB = parseInt(prompt("Please, enter the second number: "));
+const secondSum = () => {
+  let numA = parseInt(prompt("Please, enter the first number: "));
+  let numB = parseInt(prompt("Please, enter the second number: "));
   return numA + numB;
 }
 console.log(secondSum())
@@ -37,9 +37,7 @@ console.log(convertCelsiusToFahr(23.4));  // 74.12
 // ==================================================================
 
 // 🚀 4. Write a program to calculate the area of a rectangle given its length and width.
-
 // Note: the formula to calculate the area of a rectangle: "A (area) = l (length) * w (width)".
-
 
 const calculateRecArea = (length, width) => {
   let area = length * width;
@@ -70,8 +68,8 @@ console.log(checkEvenOrOdd(17));  // odd
 
 // 🚀 7. Given a list of numbers, find the maximum and minimum values.
 
-const findMaxNumber = (numbers) => numbers.reduce((max, num) => {
-  return num > max ? num : max;
+const findMaxNumber = (numbers) => numbers.reduce((num, max) => {
+  return max > num ? max : num;
 });
 console.log(findMaxNumber([5, 24, 7, 63, 145, 88, 12, 37]));  // 145
 
@@ -79,8 +77,8 @@ console.log(Math.max(56, 89, 110, 23, 4, 38, 9));  // 110
 
 // ------------------------------
 
-const findMinNumber = (numbers) => numbers.reduce((min, num) => {
-  return num < min ? num : min;
+const findMinNumber = (numbers) => numbers.reduce((num, min) => {
+  return min < num ? min : num;
 });
 console.log(findMinNumber([5, 24, 7, 63, 145, 88, 12, 37]));   // 5
 
