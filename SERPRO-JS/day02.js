@@ -61,10 +61,8 @@ calculateCircle(3.5);
 
 // 🚀 5. Create a function to reverse a given string.
 
-const reverseStr = (string) => {
-  string = string.split('').reverse().join('');
-  return string;
-}
+const reverseStr = (string) => string.split('').reverse().join('');
+
 console.log(reverseStr('chocolate'));   // etalocohc
 
 // https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
@@ -88,6 +86,8 @@ const countWords = (phrase) => {
   const sentence = phrase.split(' ');
   return sentence.filter((word) => word !== '').length;
 }
+// const countWords = (phrase) => phrase.split(' ').filter((word) => word !== '').length;
+
 console.log(countWords('She said she would stay.'));  // 5
 
 // ==================================================================
