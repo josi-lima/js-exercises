@@ -3,6 +3,17 @@
 
 // 🚀 1. Write a program to check if a number is prime.
 
+const checkPrime = (number) => {
+  if (number < 2) return false;
+  if (number === 2) return true;
+
+  let maxDiv = Math.sqrt(number);
+  for (let index = 2; index <= maxDiv; index += 1) {
+    if (number % index === 0) return false;
+  }
+  return true;
+}
+console.log(checkPrime(9));   // false
 
 // ==================================================================
 
@@ -72,15 +83,38 @@ console.log(sortByTheAlphabet(['brigadeiro', 'coxinha', 'beijinho', 'pizza']));
 
 // 🚀 7. Write a function that takes two lists and returns their intersection (common elements).
 
+const findIntersection = (arg1, arg2) => {
+  return arg1.filter((items) => arg2.indexOf(items) !== -1);
+}
+console.log(findIntersection([1, 2, 3], [3, 4, 5]));  // 3
 
 // ==================================================================
 
-// 🚀 8. Create a function that takes a number as input and prints its multiplication table.
+// 🚀 8. Create a function that will receive two lists of numbers as arguments and return a list composed of all the numbers that are either in the first list or the second list, but not in both.
 
+const findNonCommonNumbers = (arg1, arg2) => {
+  let a = arg1.filter((items) => arg2.indexOf(items) === -1);
+  let b = arg2.filter((items) => arg1.indexOf(items) === -1);
+  let result = a.concat(b);
+  return result;
+}
+console.log(findNonCommonNumbers([1, 2, 3], [3, 4, 5]));  // [ 1, 2, 4, 5 ]
+
+// concat() method -- concatenates (joins) two or more arrays. It returns a new array, containing the joined arrays.
 
 // ==================================================================
 
-// 🚀 9. Create a function that will receive two lists of numbers as arguments and return a list composed of all the numbers that are either in the first list or second list, but not in both.
+// 🚀 9. Create a function that takes a number as input and prints its multiplication table.
+
+// const multiplyNumber = () => {
+//   let number = parseInt(prompt("Please, enter a number: "));
+
+//   for (let index = 1; index <= 10; index += 1) {
+//     let result = number * index;
+//     console.log(`${number} * ${index} = ${result}`)
+//   }
+// }
+// multiplyNumber();
 
 
 // ==================================================================

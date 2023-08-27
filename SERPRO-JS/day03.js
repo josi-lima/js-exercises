@@ -50,7 +50,7 @@ console.log(isLeapYear(2024));   // leap year
 // 🚀 5. Given a list of integers, find all the even numbers and store them in a new list.
 
 const evenNumStored = (numbers) => {
-  store = [];
+  let store = [];
   for (let index = 0; index <= numbers.length; index += 1) {
     if (numbers[index] % 2 === 0) { 
       store.push(numbers[index]);
@@ -66,7 +66,6 @@ console.log(evenNumStored([7, 89, 32, 14, 22, 6, 90]));
 // 🚀 6. Given a list of names, print all names starting with the letter 'A'.
 
 const namesWithA = (names) => {
-
   const listA = names.filter((name) => name[0].toLowerCase() === 'A'.toLowerCase());
   return listA;
 }
